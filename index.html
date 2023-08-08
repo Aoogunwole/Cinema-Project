@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverScreen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
+
+    <!-- link to the CSS file -->
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-bar">
+            <div class="brand">
+                <h1 class="name1">SILVER <span class="name2">SCREEN</span></h1>
+            </div>
+            
+            <ul id="nav-menu">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="./main/schedule.html">Schedule</a></li>
+                <li><a href="./main/cast.html">Cast</a></li>
+                <li><a href="./main/schedule.html">About</a></li>
+                
+            </ul>
+            <!-- <button onclick="openIt()" class="open-bar"><i class="fa-solid fa-bars"></i></button>
+            <button onclick="closeIt()" class="close-bar"><i class="fa-solid fa-x"></i></button> -->
+        </div>
+    </nav>
+    
+    
+    <!-- Video part -->
+    <div>
+        <video src="./media/trailer2.mp4" id="myVideo" loop></video>
+            <!-- Buttons -->
+        <div class="btns">
+            <button onclick="playIt()" class="play-btn" id="play"><i class="fa-solid fa-play"></i></button>
+            <button onclick="pauseIt()" class="pause-btn" id="pause"><i class="fa-solid fa-pause"></i></button>
+            <button onclick="muteIt()" class="mute-btn" id="mute"><i class="fa-solid fa-volume-xmark"></i></button>
+            <button onclick="unmuteIt()" class="unmute-btn" id="unmute"><i class="fa-solid fa-volume-high"></i></button>
+            
+        </div>
+        <div class="btn">
+            <button onclick="openIt()" class="open-bar" id="open"><i class="fa-solid fa-bars"></i></button>
+            <button onclick="closeIt()" class="close-bar" id="close"><i class="fa-solid fa-x"></i></button>
+        </div>
+        
+
+        
+    </div>
+     
+    <!-- Opening this week SECTION -->
+    <section class="movies">
+        <h3>OPENING THIS WEEK</h3>
+        <div id="box"></div>
+        <progress value="90" max="100"></progress>
+
+        <div class="container">
+            <div class="set1">
+                <img src="./media/dr.strange.jpg" alt="">
+                <div class="text">
+                    <p>Dr.Strange</p>
+                    <p>126 mins || action,Fantasy</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/juneee (1).jpg" alt="">
+                <div class="text">
+                    <p>Dune</p>
+                    <p>2h 35m || Sci-fi/Adventure</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/sangichi.jpg" alt="">
+                <div class="text">
+                    <p>SangChi</p>
+                    <p>134 mins || Fantasy,Thriller</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/avengers (1).jpeg" alt="">
+                <div class="text">
+                    <p>Avengers</p>
+                    <p>181 mins|| Action</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/alladin.jpeg" alt="">
+                <div class="text">
+                    <p>Alladin</p>
+                    <p>128mins || Comedy, Adventure</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/rednotice (2).jpeg" alt="">
+                <div class="text">
+                    <p>Red Notice</p>
+                    <p>118 mins || Comedy, Thriller</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/beauty-and-beast.jpeg" alt="">
+                <div class="text">
+                    <p>Beauty and the Beast</p>
+                    <p>129mins || Romance,Musical</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/High-Strung (1).jpeg" alt="">
+                <div class="text">
+                    <p>High Strung</p>
+                    <p>97 mins || Dance,Romance</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/aquaman (2).jpeg" alt="">
+                <div class="text">
+                    <p>Aquaman</p>
+                    <p>143 mins|| Action,SuperHero</p>
+                </div>
+            </div>
+            <div class="set1">
+                <img src="./media/spider-man.jpeg" alt="">
+                <div class="text">
+                    <p>Spiderman: No way Home</p>
+                    <p>128mins || Action, Adventure
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <p class="more"><a href="">More...</a></p>
+    </section>
+
+
+    <!-- Coming soon -->
+
+    <section class="next-movies">
+        <h3>COMING SOON</h3>
+        <progress value="90" max="100"></progress>
+
+        <div class="container">
+            <div class="set2">
+                <img src="./media/captain-marvel.jpeg" alt="">
+                <div class="text">
+                    <p>Captain Marvel</p>
+                    <p>118 mins || Comedy, Thriller</p>
+                </div>
+            </div>
+            <div class="set2">
+                <img src="./media/freeguy.jpeg" alt="">
+                <div class="text">
+                    <p>Free Guy</p>
+                    <p>129mins || Romance, Musical</p>
+                </div>
+            </div>
+            <div class="set2">
+                <img src="./media/The-fault-in-our-stars.jpeg" alt="">
+                <div class="text">
+                    <p>The Fault in our Stars</p>
+                    <p>97 mins || Dance, Romance</p>
+                </div>
+            </div>
+            <div class="set2">
+                <img src="./media/wherehandstouch.jpeg" alt="">
+                <div class="text">
+                    <p>Where Hands Touch</p>
+                    <p>143 mins || Action, SuperHero</p>
+                </div>
+            </div>
+            <div class="set2">
+                <img src="./media/antman.jpeg" alt="">
+                <div class="text">
+                    <p>AntMan</p>
+                    <p>128mins || Action, Adventure</p>
+                </div>
+            </div>
+           
+
+        </div>
+        
+    </section>
+
+
+    <!-- NEWS SECTION -->
+
+    <section class="news">
+        <h3>NEWS</h3>
+        <div class="container">
+            <div class="news-desc">
+                <img src="./media/Cozy Cinema - Cozy & Comfy.jpg" alt="">
+                <article class="news-text">
+                    <p>Stand the chance to win a Romantic outdoor movie experience with your loved one by participating in our weekly draw.</p>
+                </article>
+            </div>
+            <div class="news-desc">
+                <img src="./media/poppycorn.jpg" alt="">
+                <article class="news-text">
+                    <p>Five Lucky people would go back home with two cartons of our Mouth Filling Popcorns at the end of every month.</p>
+                </article>
+            </div>
+            <div class="news-desc">
+                <img src="./media/cinemanews2.jpg" alt="">
+                <article class="news-text">
+                    <p>A new branch of Silver Screen Cinemas has been opened in the North of town this is to make it convenient for our customers living in the north.</p>
+                </article>
+            </div>
+            <div class="news-desc">
+                <img src="./media/zendaya2.jpg" alt="">
+                <article class="news-text">
+                    <p>Zendaya will be starring in the new blockboster movie "emotional damage",which will be released on the first week of June, stay tuned!</p>
+                </article>
+            </div>
+
+           
+
+        </div>
+    </section>
+
+
+        <!-- FOOTER -->
+    <footer>
+       <div class="footer-one">
+            <div class="brand2">
+                <a href="index.html"><h2 >SILVER <span class="brand2b">SCREEN</span></h2></a>
+            </div>
+
+            <ul class="ul1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./main/schedule.html">Schedule</a></li>
+                <li><a href="./main/cast.html">Cast</a></li>
+                <li><a href="./main/ticket.html">Bookings</a></li>
+            </ul>
+
+            <ul class="ul2">
+                <li><a href="https://www.linkedin.com/in/abraham-ogunwole-58980a220/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/AbrahamOluwabu2"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+       </div>
+
+       <div class="footer-two">
+        <p>Silverscreen@gmail.com</p>
+        <p>Siverscreen all rights reserved.</p>
+       </div>
+
+
+    </footer>
+            
+
+
+    
+
+    <script src="./main/index.js"></script>
+
+    
+</body>
+</html>

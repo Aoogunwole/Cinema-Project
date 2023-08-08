@@ -1,0 +1,572 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+
+:root {
+    /* --color-1: #D72508; */
+    --color-2: red;
+    --color-3: #6f42c1;
+    --color-4: #A7B3B1;
+    --color-5:#e70404;
+    --color-white: #fff;
+
+    --color-bg: #070111;
+    --transition: all 1000ms linear;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    background-color: var(--color-bg);
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-size: 1.6rem;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    /* position: absolute; */
+
+}
+.nav-bar {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background-color: transparent;
+    /* position: absolute; */
+}
+
+
+/* NAME */
+
+.brand{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.name1 {
+    color: var(--color-5);
+
+}
+
+.name2 {
+    color: var(--color-4);
+    font-size: 1.1rem;
+    margin-left: -.5rem;
+}
+nav ul {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul a {
+    color: var(--color-4);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Russo One', sans-serif;
+    z-index: 1;
+    transition: var(--transition);
+}
+nav ul a:hover {
+    color: var(--color-5);
+}
+#schedule {
+    text-decoration: underline wavy;
+}
+
+.open-bar, .close-bar {
+    display: none;
+}
+
+
+
+/* TICKET SECTION */
+.ticket-sec {
+    width: 100%;
+    height: max-content;
+}
+
+
+/* .ticket-sec {
+    width: 100%;
+} */
+.container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin: 8rem auto 2rem;
+}
+.ticket {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.set {
+    margin-top: -3rem;
+}
+.set2 {
+    margin-top: -0.5rem;
+}
+
+
+
+
+
+.ticket-img img {
+    width: 250px;
+}
+.ticket-text {
+    color: var(--color-4);
+    
+}
+.time {
+    color: var(--color-2);
+}
+.ticket-text h4 {
+    line-height: 0;
+    text-align:start;
+}
+.ticket p {
+    font-size: 15px;
+}
+
+
+
+.ticket-text button {
+    background-color: var(--color-2);
+    padding: 10px;
+    transition: var(--transition);
+    border-radius: 5px;
+}
+.ticket-text button:hover {
+    background-color: var(--color-3);
+}
+button a {
+    color: var(--color-white);
+}
+
+
+.fa-star, .fa-star-half-stroke, .fa-clock {
+    color: var(--color-2);
+}
+
+/* marquee {
+    width: 100%;
+} */
+marquee ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul h1 {
+    color: var(--color-2);
+    font-family: 'Russo One', sans-serif;
+}
+
+
+
+.container2 {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin: 5rem auto 0px;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 4rem;
+    font-family: 'Russo One', sans-serif;
+}
+
+.footer-one {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 3%;
+    /* height: 6rem; */
+}
+
+.brand2 {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.brand2 h2 {
+    color: #D72508;
+    font-size: 1.2rem;
+
+}
+.brand2b {
+    color: var(--color-4);
+    font-size: 1rem;
+    margin-left: -.3rem;
+}
+.brand2b:hover {
+    color: #D72508;
+}
+
+.ul1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 11%;
+}
+.ul1 a {
+    color: var(--color-4);
+    font-size: 1.3rem;
+}
+.ul1 a:hover {
+    color: #D72508;
+}
+
+.ul2 {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.ul2 i {
+    color: var(--color-4);
+}
+.ul2 i:hover {
+    color: #D72508;
+}
+
+.footer-two {
+    margin-top: 4rem;
+}
+.footer-two p {
+    color: #6d7275;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1024px) {
+    nav {
+        height: 4rem;
+        
+    }
+    nav {
+        /* width: 90%; */
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0 30px 0 40px; */
+        place-items: center;
+    }
+    
+    .brand{
+        font-size: 0.6rem;
+    }
+    
+    .name2 {
+        font-size: 1.1rem;
+    }
+    /* nav ul {
+        width: 60%;
+    } */
+    nav ul a {
+        font-size: 0.9rem;
+    }
+
+    .container, .container2 {
+        place-items: center;
+        /* margin-top: 6rem; */
+    }
+
+
+    .ticket-img img {
+        width: 225px;
+    }
+    .ticket-text {
+        margin: 0px 5% 0px;
+        line-height: 1;
+        
+        
+    }
+    .ticket-text h4{
+        height: 2px;
+        /* line-height: 0.7; */
+        font-size: 20px;
+    }
+
+
+    .footer-one {
+        width: 100%;
+        margin: 0px auto;
+        flex-direction: column;
+        gap: 0;
+    }
+    .brand2 {
+        font-size: 1.5rem;
+    }
+    .brand2 h2 {
+        font-size: 2rem;
+    
+    }
+    .brand2b {
+        font-size: 1.6rem;
+        margin-left: -.6rem;
+    }
+    .ul1 {
+        flex-direction: column;
+        padding-left: 0%;
+        width: 100%;
+        justify-content: center;
+        gap: 0.3rem;
+        margin: -0.5rem auto -0.5rem;
+    }
+    .ul1 a {
+        font-size: 1.8rem;
+    }
+    .ul2 {
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        margin-right: 40px;
+    }
+    .ul2 i {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .footer-two {
+        margin-top: 2rem;
+    }
+    .footer-two p {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .nav-bar {
+        width: 90%;
+        height: 3rem;
+        justify-content: space-between;
+        margin:0 auto;
+
+    }
+    nav ul {
+        position: absolute;
+        top: -2rem;
+        left: 35%;
+        flex-direction: column;
+        display: none;
+        /* width: 100%; */
+        width: 40%;
+        animation: animateNavItem 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+        z-index: 1;
+    }
+    
+    nav ul li {
+        height: 20px;
+        margin-top: 6px;
+    }
+    @keyframes animateNavItem {
+        0% {
+            transform: rotateZ(-90deg) rotateY(90deg) scale(0.1);
+        }
+        100% {
+            transform: rotateZ(0);
+            opacity: 1;
+        }
+    }
+    nav ul a {
+        font-size: 11px;
+    }
+    #schedule {
+        text-decoration: underline;
+    }
+    .btn {
+        position: absolute;
+        top: 5px;
+        left: 86%;
+    }
+    
+    .open-bar, .close-bar {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .close-bar {
+        display: none;
+    }
+    .fa-bars, .fa-x {
+        color: var(--color-4);
+    }
+
+    .container {
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container, .container2 {
+        place-items: center;
+        margin-top: 6rem;
+    }
+
+
+    .set {
+        margin-top: 0rem;
+    }
+    .set2 {
+        margin-top: 0rem;
+    }
+
+    .ticket {
+        margin-top: -3.5rem;
+    }
+    .ticket-img img {
+        width: 300px;
+    }
+
+    .ticket-text h4 {
+        line-height: 0;
+        font-size: 30px;
+    }
+    .ticket p {
+        /* font-size: 17px; */
+        font-weight: bolder;
+        gap: 20px;
+    }
+
+
+    .container2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .brand{
+        font-size: 0.5rem;
+    }
+    
+    .name2 {
+        font-size: 0.5rem;
+        margin-left: -.3rem;
+    }
+    
+
+    .container{
+        place-items: center;
+        margin-top: 6rem;
+        margin-bottom: 0px;
+    }
+    .ticket {
+        flex-direction: column;
+    }
+
+
+    .ticket-text {
+        margin: 0px 0px 0px 0px;
+    }
+    .ticket-text h4 {
+        font-size: 20px;
+    }
+    .ticket p {
+        font-size: 12px;
+    }
+
+    .container2 {
+        place-items: center;
+        margin-top: 2.5rem;
+    }
+
+    ul h1 {
+        font-size: 22px;
+    }
+
+
+
+    footer {
+        margin-top: 2rem;
+    }
+
+    .brand2 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .brand2 h2 {
+        font-size: 1.5rem;
+    
+    }
+    .brand2b {
+        font-size: 1.2rem;
+        margin-left: -.5rem;
+    }
+    .ul1 a {
+        font-size: 1rem;
+    }
+    .ul2 {
+        gap: 1rem;
+    }
+    .ul2 i {
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .footer-two p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 280px) {
+    .ticket-img img {
+        width: 200px;
+    }
+}

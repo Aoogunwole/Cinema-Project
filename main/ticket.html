@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/ticket.css">
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="nav-bar">
+            <div class="brand">
+                <h1 class="name1">SILVER <span class="name2">SCREEN</span></h1>
+            </div>
+            
+            <ul id="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li id="schedule"><a href="schedule.html">Schedule</a></li>
+                <li><a href="cast.html">Cast</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+            <div class="btn">
+                <button onclick="openIt()" class="open-bar" id="open"><i class="fa-solid fa-bars"></i></button>
+                <button onclick="closeIt()" class="close-bar" id="close"><i class="fa-solid fa-x"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="btn">
+        <button onclick="openIt()" class="open-bar" id="open"><i class="fa-solid fa-bars"></i></button>
+        <button onclick="closeIt()" class="close-bar" id="close"><i class="fa-solid fa-x"></i></button>
+    </div> -->
+
+
+
+    <!-- TICKET SECTION -->
+
+    <section class="main-ticket">
+        <div class="bookings">
+            <h1>BOOK A TICKET</h1>
+            <em>Movies Showing from 3rd June to 9th June at SilverScreen Cinemas</em>
+            <p>Available seats : 2000</p>
+            <p>Price: ₦2000</p>
+            <p>Ticket quantity: <span><input type="number" placeholder="0" id="quantity"></span> </p>
+            <p>Total: <span id="total">₦0</span></p>
+
+
+            <div class="time"> 
+                <div><button class="ticket-btn">Monday</button>10:30am</div>
+                <div><button class="ticket-btn">Monday</button>2:00pm</div>
+                <div><button class="ticket-btn">Monday</button>4:30pm</div>
+                <div><button class="ticket-btn">Tuesday</button>10:30am</div>
+                <div><button class="ticket-btn">Tuesday</button>2:00pm</div>
+                <div><button class="ticket-btn">Tuesday</button>4:30pm</div>
+                <div><button class="ticket-btn">Wednessday</button>10:30am</div>
+                <div><button class="ticket-btn">Wednessday</button>2:00pm</div>
+                <div><button class="ticket-btn">Wednessday</button>4:30pm</div>
+                <div><button class="ticket-btn">Thursday</button>10:30am</div>
+                <div><button class="ticket-btn">Thursday</button>2:00pm</div>
+                <div><button class="ticket-btn">Thursday</button>4:30pm</div>
+                <div><button class="ticket-btn">Friday</button>2:0pm</div>
+                <div><button class="ticket-btn">Friday</button>5:00pm</div>
+                <div><button class="ticket-btn">Saturday</button>2:00pm</div>
+                <div><button class="ticket-btn">Saturday</button>5:00am</div>
+                <div><button class="ticket-btn">Sunday</button>2:00pm</div>
+                <div><button class="ticket-btn">Sunday</button>5:00pm</div>
+            </div>
+            <div  class="ticket-btn2" id="ticket"><button>Book a Ticket</button></div>
+            
+        </div>
+    </section>
+
+
+    <!-- POP-UP FORM SECTION -->
+
+
+   <div class="card-container" id="card">
+       <div class="card-content">
+        <p class="x" id="x"><i class="fa-solid fa-x"></i></p>
+        <form action="">
+            <div class="data">
+                <label for="name">Name</label>
+                <input type="text" required id="name">
+            </div>
+            <div class="data">
+                <label for="name">Email Address</label>
+                <input type="email" required>
+            </div>
+            <div class="data">
+                <label for="name">Card No.</label>
+                <input type="number" required>
+            </div>
+            <div class="data">
+                <label for="name">Cvv</label>
+                <input type="number" required>
+            </div>
+            <div class="data">
+                <label for="name">Exp. Date</label>
+                <input type="text" required>
+            </div>
+            <div class="data">
+                <label for="name">Pin</label>
+                <input type="password" required>
+            </div>
+            <button class="pay" type="submit" id="pay">Pay here</button>
+        </form>
+        <!-- <button class="pay" type="submit">Pay here</button> -->
+        <p id="text"></p>
+       </div>
+   </div>
+
+
+   <!-- FOOTER -->
+
+
+   <footer>
+    <div class="footer-one">
+        <div class="brand2">
+            <a href="/index.html"><h2 >SILVER <span class="brand2b">SCREEN</span></h2></a>
+        </div>
+
+        <ul class="ul1">
+            <li><a href="">Home</a></li>
+            <li><a href="">Schedule</a></li>
+            <li><a href="">Cast</a></li>
+            <li><a href="">Bookings</a></li>
+        </ul>
+
+        <ul class="ul2">
+            <li><a href="https://www.linkedin.com/in/abraham-ogunwole-58980a220/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/AbrahamOluwabu2"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="footer-two">
+     <p>Silverscreen@gmail.com</p>
+     <p>Siverscreen all rights reserved.</p>
+    </div>
+
+
+</footer>
+
+
+
+   <script src="ticket.js"></script>
+   <script src="index.js"></script>
+</body>
+</html>

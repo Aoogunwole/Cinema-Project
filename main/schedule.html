@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans:wght@300&family=Open+Sans:wght@400;500&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/597098b101.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/schedule.css">
+</head>
+<body>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-bar">
+            <div class="brand">
+                <h1 class="name1">SILVER <span class="name2">SCREEN</span></h1>
+            </div>
+            
+            <ul id="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li id="schedule"><a href="schedule.html">Schedule</a></li>
+                <li><a href="cast.html">Cast</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+            <div class="btn">
+                <button onclick="openIt()" class="open-bar" id="open"><i class="fa-solid fa-bars"></i></button>
+                <button onclick="closeIt()" class="close-bar" id="close"><i class="fa-solid fa-x"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="btn">
+        <button onclick="openIt()" class="open-bar" id="open"><i class="fa-solid fa-bars"></i></button>
+        <button onclick="closeIt()" class="close-bar" id="close"><i class="fa-solid fa-x"></i></button>
+    </div> -->
+
+
+        <!-- TICKET SECTION -->
+    <section class="ticket-sec">
+        <div class="container">
+            <div class="ticket">
+                <div class="ticket-img">
+                    <img src="../media/dr.strange (1).jpg" alt="">
+                </div>
+                <article class="ticket-text">
+                    <h4>Dr.Strange</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+
+            <div class="ticket">
+                <div class="ticket-img">
+                    <img src="../media/avengers.jpeg" alt="">
+                </div>
+                <article class="ticket-text">
+                    <h4>Avengers</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+
+            <div class="ticket set">
+                <div class="ticket-img">
+                    <img src="../media/captain-marvel.jpeg" alt="">
+                </div>
+                <article class="ticket-text set2">
+                    <h4>Marvel</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>  
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+
+            <div class="ticket set">
+                <div class="ticket-img">
+                    <img src="../media/HarryPotter.jpeg" alt="">
+                </div>
+                <article class="ticket-text set2">
+                    <h4>HarryPotter</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <marquee direction="left"width = "100%">
+        <ul>
+            <li><h1>SILVERSCREEN</h1></li>
+            <li><h1>MOVIE TIMES</h1></li>
+        </ul>
+    </marquee>
+
+
+    <section class="ticket-sec">
+        <div class="container2">
+            <div class="ticket">
+                <div class="ticket-img">
+                    <img src="../media/High-Strung.jpeg" alt="">
+                </div>
+                <article class="ticket-text">
+                    <h4>High Strung</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+
+            <div class="ticket">
+                <div class="ticket-img">
+                    <img src="../media/spider-man.jpeg" alt="">
+                </div>
+                <article class="ticket-text">
+                    <h4>Spider Man</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+
+            <div class="ticket set">
+                <div class="ticket-img">
+                    <img src="../media/juneee.jpg" alt="">
+                </div>
+                <article class="ticket-text set2">
+                    <h4>Dune</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>  
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+
+            <div class="ticket set">
+                <div class="ticket-img">
+                    <img src="../media/rednotice (2).jpeg" alt="">
+                </div>
+                <article class="ticket-text set2">
+                    <h4>Red Notice</h4>
+                    <p class="time"> <i class="fa-regular fa-clock"></i> 2hrs 11mins</p>
+                    <p>SHOWTIME</p>
+                    <p>MON-THURS: 10:30am, 2:00pm, 4:30pm</p>
+                    <p>FRI-SAT: 2:00pm, 5:00pm</p>
+                    <p>Genre:Adventure, Sci-fi</p>
+                    <p>Language: English</p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                    <button><a href="./ticket.html">Book a ticket</a></button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-one">
+            <div class="brand2">
+                <a href="/index.html"><h2 >SILVER <span class="brand2b">SCREEN</span></h2></a>
+            </div>
+
+            <ul class="ul1">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="cast.html">Cast</a></li>
+                <li><a href="./ticket.html">Bookings</a></li>
+            </ul>
+
+            <ul class="ul2">
+                <li><a href="https://www.linkedin.com/in/abraham-ogunwole-58980a220/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/AbrahamOluwabu2"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+ 
+        <div class="footer-two">
+         <p>Silverscreen@gmail.com</p>
+         <p>Siverscreen all rights reserved.</p>
+        </div>
+ 
+ 
+    </footer>
+
+
+    
+   
+
+
+    <script src="index.js"></script>
+</body>
+</html>
